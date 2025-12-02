@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Kestrel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #12121a 50%, #0a0a0f 100%);
+            color: #e4e4e7;
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            color: #f4f4f5;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #f4f4f5;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: #71717a;
+            font-size: 14px;
+        }
+
+        .card {
+            background: rgba(24, 24, 32, 0.8);
+            border: 1px solid rgba(147, 51, 234, 0.2);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+        }
+
+        .card-highlight {
+            border-color: rgba(147, 51, 234, 0.4);
+            background: linear-gradient(135deg, rgba(147, 51, 234, 0.1) 0%, rgba(24, 24, 32, 0.8) 100%);
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #f4f4f5;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2 .icon {
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 .icon svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        p {
+            color: #a1a1aa;
+            margin-bottom: 16px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            color: #a1a1aa;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(63, 63, 70, 0.5);
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .check-icon {
+            width: 20px;
+            height: 20px;
+            background: rgba(34, 197, 94, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .check-icon svg {
+            width: 12px;
+            height: 12px;
+            color: #22c55e;
+        }
+
+        .warning-box {
+            background: rgba(234, 179, 8, 0.1);
+            border: 1px solid rgba(234, 179, 8, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+
+        .warning-box p {
+            color: #fbbf24;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .warning-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #fbbf24;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(147, 51, 234, 0.3) 50%, transparent 100%);
+            margin: 40px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(63, 63, 70, 0.3);
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #52525b;
+        }
+
+        .contact-link {
+            color: #9333ea;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-link:hover {
+            color: #a855f7;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(147, 51, 234, 0.2);
+            color: #c084fc;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-left: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 16px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .card {
+                padding: 24px;
+            }
+
+            .logo-text {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- Packet Wing Logo SVG - Wing made of data packets -->
+                <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#9333ea"/>
+                            <stop offset="100%" style="stop-color:#7c3aed"/>
+                        </linearGradient>
+                        <linearGradient id="packetBright" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#c084fc"/>
+                            <stop offset="100%" style="stop-color:#a855f7"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Background -->
+                    <rect x="4" y="4" width="40" height="40" rx="10" fill="url(#logoGradient)"/>
+                    <!-- Row 1 - Top packets -->
+                    <rect x="8" y="11" width="7" height="5" rx="1" fill="white" fill-opacity="0.4"/>
+                    <rect x="17" y="10" width="7" height="5" rx="1" fill="white" fill-opacity="0.5"/>
+                    <rect x="26" y="9" width="8" height="5" rx="1" fill="white" fill-opacity="0.6"/>
+                    <rect x="35" y="9" width="5" height="4" rx="1" fill="white" fill-opacity="0.75"/>
+                    <!-- Row 2 -->
+                    <rect x="11" y="17" width="7" height="5" rx="1" fill="white" fill-opacity="0.45"/>
+                    <rect x="20" y="16" width="8" height="5" rx="1" fill="white" fill-opacity="0.55"/>
+                    <rect x="30" y="15" width="8" height="5" rx="1" fill="white" fill-opacity="0.7"/>
+                    <!-- Row 3 - Middle (brightest) -->
+                    <rect x="14" y="24" width="8" height="5" rx="1" fill="white" fill-opacity="0.55"/>
+                    <rect x="24" y="23" width="8" height="6" rx="1" fill="white" fill-opacity="0.7"/>
+                    <rect x="34" y="22" width="7" height="5" rx="1" fill="url(#packetBright)" fill-opacity="0.95"/>
+                    <!-- Row 4 -->
+                    <rect x="18" y="31" width="7" height="5" rx="1" fill="white" fill-opacity="0.55"/>
+                    <rect x="27" y="32" width="8" height="5" rx="1" fill="white" fill-opacity="0.7"/>
+                    <rect x="36" y="31" width="6" height="5" rx="1" fill="url(#packetBright)" fill-opacity="0.9"/>
+                    <!-- Row 5 - Bottom -->
+                    <rect x="22" y="38" width="6" height="4" rx="1" fill="white" fill-opacity="0.5"/>
+                    <rect x="30" y="39" width="7" height="4" rx="1" fill="white" fill-opacity="0.7"/>
+                </svg>
+                <span class="logo-text">KESTREL</span>
+            </div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Last updated: December 2025</p>
+        </header>
+
+        <div class="card card-highlight">
+            <h2>
+                <span class="icon">
+                    <svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                </span>
+                Your Privacy Matters
+            </h2>
+            <p>Kestrel is designed with privacy as a core principle. All packet capture analysis happens <strong style="color: #f4f4f5;">entirely on your device</strong>.</p>
+        </div>
+
+        <div class="card">
+            <h2>
+                <span class="icon">
+                    <svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                    </svg>
+                </span>
+                What We Don't Collect
+            </h2>
+            <ul>
+                <li>
+                    <span class="check-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </span>
+                    <span><strong style="color: #e4e4e7;">No Data Transmission</strong> — Your PCAP files, analysis results, and all network data remain on your device. Nothing is ever transmitted to our servers or any third party.</span>
+                </li>
+                <li>
+                    <span class="check-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </span>
+                    <span><strong style="color: #e4e4e7;">No Trackers Added</strong> — We did not add any trackers, analytics services, or crash reporting tools to Kestrel.</span>
+                </li>
+                <li>
+                    <span class="check-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </span>
+                    <span><strong style="color: #e4e4e7;">No Personal Information</strong> — We do not collect, store, or process any personal information. No account creation is required to use Kestrel.</span>
+                </li>
+                <li>
+                    <span class="check-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </span>
+                    <span><strong style="color: #e4e4e7;">No Third-Party Services</strong> — Kestrel operates completely offline. We have not developed any external APIs, cloud services, or third-party integrations that receive your data.</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>
+                <span class="icon">
+                    <svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                    </svg>
+                </span>
+                Local Processing
+            </h2>
+            <p>All features of Kestrel operate locally on your device:</p>
+            <ul>
+                <li>
+                    <span class="check-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </span>
+                    <span>PCAP and PCAPNG file parsing</span>
+                </li>
+                <li>
+                    <span class="check-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </span>
+                    <span>Packet analysis and flow reconstruction</span>
+                </li>
+                <li>
+                    <span class="check-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </span>
+                    <span>DNS query extraction and anomaly detection</span>
+                </li>
+                <li>
+                    <span class="check-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </span>
+                    <span>File carving and media extraction</span>
+                </li>
+                <li>
+                    <span class="check-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </span>
+                    <span>Sensitive data scanning</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>
+                <span class="icon">
+                    <svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                </span>
+                Security Disclaimer
+            </h2>
+            <p>While we have designed Kestrel with security in mind and process all data locally on your device, no software application can guarantee absolute security.</p>
+            
+            <div class="warning-box">
+                <div class="warning-title">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    Important Notice
+                </div>
+                <p>PCAP files may contain sensitive information including passwords, authentication tokens, and personal data transmitted over networks. Users are responsible for handling their capture files appropriately and in compliance with applicable laws and regulations. We recommend analyzing only captures from networks you own or have explicit permission to monitor.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>
+                <span class="icon">
+                    <svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                </span>
+                Policy Updates
+            </h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated revision date. Continued use of Kestrel after any modifications indicates acceptance of the updated policy.</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="card">
+            <h2>
+                <span class="icon">
+                    <svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                </span>
+                Contact Us
+            </h2>
+            <p>If you have any questions about this Privacy Policy or Kestrel's privacy practices, please contact us at:</p>
+            <p><a href="mailto:support@quantumkey.net" class="contact-link">support@quantumkey.net</a></p>
+        </div>
+
+        <footer>
+            <p>© 2024 Kestrel. All rig
